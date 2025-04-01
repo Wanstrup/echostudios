@@ -1,0 +1,113 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  /* Sørg for at navbaren fylder hele bredden */
+  header {
+    width: 100%; /* Sørger for at navbaren strækker sig over hele bredden */
+    background-color: #333;
+    padding: 10px 0;
+    margin: 0;
+  }
+  
+  nav .logo-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  nav .logo {
+    width: 75px;  /* Sætter en passende størrelse for logoet */
+    height: auto;
+    margin-right: 20px; /* Afstand mellem logo og navigationslinks */
+  }
+  
+  /* Hvis du vil ændre logoets størrelse på mindre skærme */
+  @media (max-width: 768px) {
+    nav .logo {
+      width: 100px;  /* Mindre logo på mobile enheder */
+    }
+  }
+  
+  /* Styling for navigation links */
+  nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Styling for links på hover */
+  nav ul li a:hover {
+    color: #007bff;
+  }
+
+  h1 {
+    font-size: 3rem;  /* Størrelse på overskriften */
+    color: #333;  /* Farve på teksten */
+    text-align: center;  /* Centrerer teksten horisontalt */
+  }
+  
+  /* Styling for formularen */
+  .booking-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  button.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+  
+  button.submit-btn:hover {
+    background-color: #555;
+  }
+  
+  

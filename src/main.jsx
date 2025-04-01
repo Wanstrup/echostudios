@@ -1,6 +1,6 @@
-import React from 'react'
-import './WebPage.css'
-import App from './App'
+import React from 'react';
+import { Link } from 'react-router-dom'; 
+import './WebPage.css';
 
 function WebPage() {
   return (
@@ -10,16 +10,17 @@ function WebPage() {
         <nav>
           <div className="logo">MyWebsite</div>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            {/* Brug Link i stedet for almindelige a-tags */}
+            <li><Link to="/hvorforos">Hvorfor os</Link></li>
+            <li><Link to="/omos">Om os</Link></li>
+            <li><Link to="/book">Book et møde</Link></li>
           </ul>
         </nav>
       </header>
 
       {/* Main Content */}
       <main>
-        <h1>Welcome to My Website</h1>
+        <h1>Echo Studio</h1>
         <div className="content">
           <p>
             This is a simple webpage created using React. 
@@ -34,7 +35,7 @@ function WebPage() {
         <p>&copy; 2024 My Website. All Rights Reserved.</p>
       </footer>
     </div>
-  )
+  );
 }
 
-export default WebPage
+export default WebPage;
