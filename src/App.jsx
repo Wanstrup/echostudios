@@ -10,6 +10,7 @@ function App() {
     <Router>
       <Routes>
         {/* Definer alle de ruter, der svarer til de sider, du vil navigere til */}
+        <Route path="/" element={<WebPage />} />
         <Route path="/main" element={<WebPage />} />
         <Route path="/hvorforos" element={<HvorforOs />} />
         <Route path="/omos" element={<OmOs />} />

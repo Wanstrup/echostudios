@@ -1,0 +1,131 @@
+/* Generelle stilarter */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .hvorforos-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Header styling */
+  header {
+    background-color: #333;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-link {
+    text-decoration: none;
+  }
+  
+  .logo {
+    height: 40px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-left: 2rem;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #007bff;
+  }
+  
+  /* Main content styling */
+  .hvorforos-content {
+    flex: 1;
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .hvorforos-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #007bff;
+  }
+  
+  /* Grid section styling */
+  .grid-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 5rem;
+    align-items: center;
+  }
+  
+  
+  .text-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #444;
+  }
+  
+  .text-content p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .image-content {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-content img:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Footer styling */
+  footer {
+    background-color: #333;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    border-top: 1px solid #e9ecef;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .grid-section {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
+    .image-content {
+      margin-bottom: 1rem;
+    }
+  }
