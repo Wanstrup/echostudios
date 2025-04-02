@@ -28,8 +28,11 @@ function HvorforOs() {
       <main className="hvorforos-content">
         <h1>Hvorfor vælge os?</h1>
         
-        {/* Første sektion: Tekst til venstre, billede til højre */}
-        <section className="grid-section">
+        {/* Første sektion: Tekst først, billede efter (på mobil) */}
+        <section className="grid-section section-first">
+          <div className="image-content">
+            <img src={image1} alt="Ekspertise og erfaring" />
+          </div>
           <div className="text-content">
             <h2>Ekspertise og erfaring</h2>
             <p>
@@ -39,13 +42,10 @@ function HvorforOs() {
               Hvad gør os anderledes? Det er vores unikke tilgang til hvert projekt. Vi lytter til dine behov, analyserer dine udfordringer og skaber skræddersyede løsninger, der passer præcist til dine ønsker og mål.
             </p>
           </div>
-          <div className="image-content">
-            <img src={image1} alt="Ekspertise og erfaring" />
-          </div>
         </section>
         
-        {/* Anden sektion: Billede til venstre, tekst til højre */}
-        <section className="grid-section alternate">
+        {/* Anden sektion: Billede først, tekst efter (på mobil) */}
+        <section className="grid-section section-second">
           <div className="image-content">
             <img src={image2} alt="Innovative løsninger" />
           </div>
@@ -60,8 +60,11 @@ function HvorforOs() {
           </div>
         </section>
         
-        {/* Tredje sektion: Tekst til venstre, billede til højre */}
-        <section className="grid-section">
+        {/* Tredje sektion: Tekst først, billede efter (på mobil) */}
+        <section className="grid-section section-third">
+          <div className="image-content">
+            <img src={image3} alt="Kundefokus og resultater" />
+          </div>
           <div className="text-content">
             <h2>Kundefokus og resultater</h2>
             <p>
@@ -70,9 +73,6 @@ function HvorforOs() {
             <p>
               Med en portefølje af tilfredse kunder og succesfulde projekter, er vi klar til at hjælpe dig med at opnå dine mål. Lad os samarbejde om at skabe de resultater, du drømmer om.
             </p>
-          </div>
-          <div className="image-content">
-            <img src={image3} alt="Kundefokus og resultater" />
           </div>
         </section>
       </main>
