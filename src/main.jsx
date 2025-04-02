@@ -11,7 +11,7 @@ function WebPage() {
           <div className="logo">MyWebsite</div>
           <ul>
             {/* Brug Link i stedet for almindelige a-tags */}
-            <li><Link to="/hvorforos">Hvorfor os</Link></li>
+            <li><Link to="/hvorforos">Hvorfor os?</Link></li>
             <li><Link to="/omos">Om os</Link></li>
             <li><Link to="/book">Book et møde</Link></li>
           </ul>
